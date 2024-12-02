@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payroll Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Login Form -->
+    <div id="loginForm">
+        <h2>Employee Login</h2>
+        <form id="loginFormId">
+            <label for="empID">Employee ID:</label>
+            <input type="number" id="empID" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p id="loginError" style="color:red; display:none;">Invalid ID or Password.</p>
+    </div>
+
+    <!-- Employee Data Table -->
+    <div id="employeeData" style="display: none;">
+        <h2>Employee Data</h2>
+        <table id="employeeTable">
+            <thead>
+                <tr>
+                    <th>Employee ID</th>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Department</th>
+                    <th>Basic Salary</th>
+                    <th>Contact</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <!-- Payroll Section -->
+    <div id="payrollSection" style="display: none;">
+        <h2>Payroll Data</h2>
+        <table id="payrollTable">
+            <thead>
+                <tr>
+                    <th>Employee ID</th>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Department</th>
+                    <th>Basic Salary</th>
+                    <th>Bonus</th>
+                    <th>Total Salary</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <!-- Attendance Section -->
+    <div id="attendanceSection" style="display: none;">
+        <h2>Attendance Data</h2>
+        <table id="attendanceTable">
+            <thead>
+                <tr>
+                    <th>Employee ID</th>
+                    <th>Name</th>
+                    <th>Attendance Percentage</th>
+                </tr>
+            </thead>
+            <tbody id="attendanceData"></tbody>
+        </table>
+    </div>
+
+    <!-- Logout Button -->
+    <div id="logoutSection" style="display: none;">
+        <button id="logoutButton">Logout</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9f7ef; /* Light green background */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2e7d32; /* Dark green header */
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: #2e7d32; /* Dark green color for headings */
+}
+
+section {
+    margin: 20px;
+}
+
+#loginForm {
+    background-color: #a5d6a7; /* Light green form background */
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#loginForm h2 {
+    color: #2e7d32; /* Dark green for the login heading */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #388e3c; /* Medium green for labels */
+}
+
+input[type="number"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #388e3c; /* Green border */
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #388e3c; /* Medium green button */
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #2e7d32; /* Dark green on hover */
+}
+
+#loginError {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+#employeeData, #payrollSection, #attendanceSection, #logoutSection {
+    display: none;
+}
+
+/* Table styles for Employee Data, Payroll, and Attendance */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #388e3c; /* Green border for tables */
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #a5d6a7; /* Light green for header cells */
+}
